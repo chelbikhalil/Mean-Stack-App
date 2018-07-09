@@ -1,0 +1,47 @@
+<form #f="ngForm" >
+  <div>
+ <div class="row">
+     <div class="col-md-offset-2 col-md-8">
+    <h1> <small> Ajout d'un Client</small></h1> 
+     </div>
+     </div>
+     
+     <div class="row">
+     <div class="col-md-offset-2 col-md-3">
+     <div class="form-group">
+     <label for="nomC">Nom Client</label>
+     <input type="text" class="form-control"  name="nomC" placeholder=" entrer le Nom"
+     
+     ngModel required #nomC="ngModel"
+
+     >
+     </div>
+     </div>
+     <div class="col-md-offset-1 col-md-3">
+     <div class="form-group">
+     <label for="Adresse">Adresse Siège Social</label>
+     <input type="text" class="form-control"    placeholder="Siège Social du client " name="Adresse" ngModel>
+     </div>
+     </div>
+     </div>
+     
+     <div class="row">
+     <div class="col-md-offset-2 col-md-7">
+     <div class="form-group">
+     <label for="Type_payement">Type de payement</label>
+
+     <input type="text" class="form-control"  placeholder="Annuelle / mensuelle" name="Type_payement" ngModel>
+     </div>
+     </div>
+     </div>
+ 
+     
+
+             <br/>
+     <div class="row">
+     <div class="col-md-offset-5 col-md-1">
+     <button type="submit"    class="btn btn-primary">Envoyer les informations</button>
+     </div>
+     </div>
+ </div>
+ </form>

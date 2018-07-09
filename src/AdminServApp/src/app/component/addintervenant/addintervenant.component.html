@@ -1,0 +1,73 @@
+<form #f="ngForm" (ngSubmit)="addintervenant(f)" novalidate>
+    <div>
+   <div class="row">
+       <div class="col-md-offset-2 col-md-8">
+      <h1> <small> Ajout d'un Intervenant</small></h1> 
+       </div>
+       </div>
+      <div class="col-md-offset-1 col-md-3">
+       <div class="form-group">
+       <label for="FirstName">Nom & prénom</label>
+       <input type="text" class="form-control"  placeholder="nom & prénom" name="FirstName" ngModel>
+       </div>
+       </div>
+       </div>
+       
+       <div class="row">
+       <div class="col-md-offset-2 col-md-7">
+       <div class="form-group">
+       <label for="Email">Email</label>
+  
+       <input type="text" class="form-control"  placeholder="Email" name="Email" ngModel>
+       </div>
+       </div>
+       
+           <div class="col-md-offset-2 col-md-7">
+           <div class="form-group">
+           <label for="Adresse">Adresse</label>
+           <input type="text" class="form-control"   name="Adresse" placeholder="Enter votre Adresse"  ngModel>
+           </div>
+           </div>
+           </div>
+           <div class="row">
+            <div class="col-md-offset-2 col-md-7">
+            <div class="form-group">
+            <label for="Tel">Téléphone</label>
+            <input type="text" class="form-control"   name="Tel" placeholder="Enter votre Tel"  ngModel>
+            </div>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-md-offset-2 col-md-7">
+                <div class="form-group">
+                <label for="mdp">Mots de Passe</label>
+                <input type="password" class="form-control"   name="mdp" placeholder="Enter votre  mdp"  ngModel>
+                </div>
+                </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-offset-2 col-md-7">
+                    <div class="form-group">
+                    <label for=" pseudo">pseudo</label>
+                    <input type="text" class="form-control"   name="pseudo" placeholder="Enter votre  pseudo"  ngModel>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-offset-2 col-md-7">
+                        <div class="form-group">
+                        <label for=" cin">cin</label>
+                        <input type="text" class="form-control"   name="cin" placeholder="Enter votre  cin"  ngModel>
+                        </div>
+                        </div>
+                        </div>
+       
+  
+               <br/>
+       <div class="row">
+       <div class="col-md-offset-5 col-md-1">
+       <button type="submit"    class="btn btn-primary">Envoyer les informations</button>
+       </div>
+       </div>
+   
+   </form>

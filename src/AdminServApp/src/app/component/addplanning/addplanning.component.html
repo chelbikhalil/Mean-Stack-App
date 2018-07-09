@@ -1,0 +1,77 @@
+<form #f="ngForm" (ngSubmit)="addplanning(f)" novalidate>
+  <div>
+ <div class="row">
+     <div class="col-md-offset-2 col-md-8">
+    <h1> <small> Ajout d'un visite</small></h1> 
+     </div>
+     </div>
+     
+     <div class="row">
+     <div class="col-md-offset-2 col-md-3">
+     <div class="form-group">
+     <label for="nomC">Nom Client</label>
+     <select class="col-md-offset-2 col-md-7" name="nomC" ngModel> <option  *ngFor= " let clients of clients"  >{{clients.nomC}}</option> </select>
+      
+     </div>
+     </div>
+     </div>
+     <div class="col-md-offset-1 col-md-3">
+     <div class="form-group">
+      <label for="nomC">Id Sit</label>
+      <select class="col-md-offset-2 col-md-7" name="_idsit" ngModel> <option  *ngFor= " let SIT of SIT"  >{{SIT._id}}</option> </select>
+     </div>
+     </div>
+    
+  <div class="col-md-offset-1 col-md-3">
+  <div class="form-group">
+   <label for="chassis">Chassis</label>
+   <select class="col-md-offset-2 col-md-7" name="chassis" ngModel> <option  *ngFor= " let SIT of SIT"  >{{SIT.Chassis}}</option> </select>
+  </div>
+  </div>
+  <div class="col-md-offset-1 col-md-3">
+    <div class="form-group">
+     <label for="technologie">technologie</label>
+     <select class="col-md-offset-2 col-md-7" name="technologie" ngModel> <option  *ngFor= " let SIT of SIT"  >{{SIT.technologie}}</option> </select>
+    </div>
+    </div>
+    <div class="col-md-offset-1 col-md-3">
+      <div class="form-group">
+       <label for="intervenant">intervenant</label>
+       <select class="col-md-offset-2 col-md-7" name="FirstName" ngModel> <option  *ngFor= " let intervenant of intervenant"  >{{intervenant.FirstName}}</option> </select>
+      </div>
+      </div>
+       
+          <div class="row">
+            <div class="col-md-offset-2 col-md-7">
+            <div class="form-group">
+            <label for="date">Date</label>
+            <input type="text" class="form-control"   name="date" placeholder="format dd/MM/yy"  ngModel>
+            </div>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-md-offset-2 col-md-7">
+                <div class="form-group">
+                <label for="heure">Heure</label>
+                <input type="text" class="form-control"   name="heure" placeholder="format hh:MM"  ngModel>
+                </div>
+                </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-offset-2 col-md-7">
+                  <div class="form-group">
+                  <label for="description">Description</label>
+                  <input type="text" class="form-control"   name="description" placeholder="description"  ngModel>
+                  </div>
+                  </div>
+                  </div>
+     
+
+             <br/>
+     <div class="row">
+     <div class="col-md-offset-5 col-md-1">
+     <button type="submit"    class="btn btn-primary">Envoyer les informations</button>
+     </div>
+     </div>
+     </div>
+ </form>

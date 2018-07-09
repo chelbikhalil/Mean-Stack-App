@@ -1,0 +1,19 @@
+
+
+<tbody  *ngFor= " let rapport of rapport" >
+    
+<div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+  
+  <img class="card-img-top" src="assets/images/rapp.png" alt="Card image cap">
+  <div class="card-body">
+    <p class="card-text">Client: {{rapport.nomC}}</p>
+    <p class="card-text">Nom Rresponsable Sit: {{rapport.nomResponsableSit}}</p>
+    <p class="card-text">DateVisite : {{date}}</p>
+  
+  <button class="btn btn-primary" (click)= "downloadpdf()"> download PDF rapport </button>
+</div>
+</div>
+      
+</tbody>
+
+
